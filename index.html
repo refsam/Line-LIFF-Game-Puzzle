@@ -1,0 +1,93 @@
+<!doctype html>
+<html style="background-image: image(LAUT.jpg);">
+
+<head>
+    <title>Permainan Puzzle</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <div style="border: 5px outset rgb(248, 55, 55); padding :10px;  border-width: 20px; background-color:white;">
+        <span>MAIN PUZZLE</span>
+        <br>
+        <span id="move" style="background-color:white;"><b>Move: 100</b></span>
+        <span id="waktu" style="background-color:white;"><b>Waktu: 100</b></span>
+    </div>
+    <br>
+</head>
+
+<body>
+    <div>
+        <div class="game">
+            <div class="grid">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button></button>
+            </div>
+
+            <div class="footer">
+                <button>Main Yuk</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <a style="margin: 10px;" href="puzzle2/index.html" class="btn btn-success btn-small">Level Selanjutnya</a>
+    <h3 class="message">Mantap Jiwa!</h3>
+
+    <!--Konten LIFF v2-->
+
+    <div id="liffAppContent">
+        <!-- ACTION BUTTONS -->
+        <div class="buttonGroup">
+            <div class="buttonRow">
+                <button id="openWindowButton" class="btn btn-info btn-small ">Buka di Browser</button>
+                <button id="closeWindowButton" class="btn btn-danger btn-small">Tutup LIFF App</button>
+                <button id="sendMessageButton" class="btn btn-warning btn-small">Kirim Pesan Ke teman</button>
+            </div>
+
+        </div>
+
+        <!-- LIFF DATA -->
+        <div id="liffData">
+            <h4 id="liffDataHeader" class="textLeft">Informasi:</h4>
+            <table>
+                <tr>
+                    <th style="color: white;">Client : </th>
+                    <td id="isInClient" class="textLeft"></td>
+                </tr>
+                <tr>
+                    <th style="color: white;">LoggedIn : </th>
+                    <td id="isLoggedIn" class="textLeft"></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="buttonGroup">
+            <button id="liffLoginButton" class="btn btn-success ">Log in</button>
+            <button id="liffLogoutButton" class="btn btn-warning">Log out</button>
+        </div>
+        <br>
+        <div class="copyright">
+            ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script> Refsam Maulana
+        </div>
+        <div id="statusMessage">
+            <div id="isInClientMessage"></div>
+            <div id="apiReferenceMessage">
+            </div>
+        </div>
+    </div>
+    <script src="game-config.js"></script>
+</body>
+
+
+<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+<script src="liff-stater.js"></script>
+
+</html>
